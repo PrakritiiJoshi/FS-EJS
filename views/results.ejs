@@ -1,0 +1,35 @@
+
+<head>
+
+  <title>Results Page</title>
+
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+
+
+</head>
+<body>
+  <table border = "5">
+    <tr>
+      <th>Year</th>
+      <th>Name</th>
+      <th>Type</th>
+
+      <th>Poster Cover</th>
+      <th>IMDB Link</th>
+    </tr>
+    <% data['Search'].forEach(function(movie){ %> <tr>
+
+      <% var imdb_url = 'https://www.imdb.com/title/' + movie['imdbID'] %>
+      <td><%= movie['Year'] %></td>
+      <td><%= movie['Title'] %></td>
+      <td><%= movie['Type'] %></td>
+
+      <td><img src="<%= movie['Poster'] %>" alt=""></td>
+      <td><a href="<%= imdb_url %>">View on IMDB</a></td>
+    </tr>
+    <% }) %>
+  </table>
+  <br/>
+  <a href="/">Find something else!!</a>
+</body>
+</html>

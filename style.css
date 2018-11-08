@@ -1,0 +1,56 @@
+app.use(express.static('public'));
+
+head {
+	 margin: auto;
+    width: 50%;
+
+}
+
+body {
+    text-align: center;
+    background-color: black;
+}
+
+
+h1 {
+	position: absolute;
+	letter-spacing: 5px;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 0;
+	margin-top: 5%;
+	color: white;
+	font-family: 'Great Vibes', cursive;
+	font-size: 70px;
+	text-align: center;
+
+	top:5%;
+}
+
+
+form {
+	position: absolute;
+	font-family: 'Roboto', sans-serif;
+  	text-align: center;
+  	color: white;
+  	display: inline-block;
+    max-width: 300px;
+    margin: auto;
+    vertical-align: middle;
+     top:30%;
+     background-color: lightblue;
+
+	
+
+}
+
+table{
+	 width:70%; 
+    margin-left:15%; 
+    margin-right:15%;
+    top:40%;
+    color: black;
+    background-color: white;
+}
